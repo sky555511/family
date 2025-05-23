@@ -38,18 +38,10 @@ const swiperList = ref([
     title: '唐城穿越盛世唐风',
     subtitle: '襄阳'
   }
-  // {
-  //   id: 6,
-  //   image: 'http://www.wp520.online/images/qhh.jpg',
-  //   title: '文化探索之旅',
-  //   subtitle: '秦淮河'
-  // }
 ])
 
 // 计算轮播图高度
 const swiperHeight = computed(() => Math.floor(windowWidth.value * 0.53))
-// const swiperHeight = computed(() => windowWidth.value * 0.53)
-
 // 功能入口
 const features = ref([
   { icon: 'todo-list-o', text: '行程规划', router:'/journeyPlan' },
@@ -60,7 +52,7 @@ const features = ref([
 
 // 热门目的地
 const destinations = ref([
-  { name: '三亚', tag: '海岛', icon: 'gem-o' },
+  { name: '三亚', tag: '海岛', icon: 'gem-o'},
   { name: '丽江', tag: '古镇', icon: 'flower-o' },
   { name: '桂林', tag: '山水', icon: 'star-o' },
   { name: '敦煌', tag: '文化', icon: 'fire-o' }
@@ -149,15 +141,17 @@ const activeName = ref('0')
           :key="index"
           class="destination-item"
         >
-          <van-icon :name="item.icon" size="24" />
-          <div class="destination-info">
-            <span class="name">{{ item.name }}</span>
-            <van-tag
-              type="primary"
-              plain
-            >
-              {{ item.tag }}
-            </van-tag>
+          <div>
+            <van-icon :name="item.icon" size="24" />
+            <div class="destination-info">
+              <span class="name">{{ item.name }}</span>
+              <van-tag
+                type="primary"
+                plain
+              >
+                {{ item.tag }}
+              </van-tag>
+            </div>
           </div>
         </div>
       </div>
@@ -185,22 +179,6 @@ const activeName = ref('0')
           </ul>
         </van-collapse-item>
       </van-collapse>
-      <!-- <van-collapse accordion>
-        <van-collapse-item title="儿童必备物品清单">
-          <ul class="tip-list">
-            <li>· 防晒霜/遮阳帽</li>
-            <li>· 常用药品（退烧贴等）</li>
-            <li>· 便携式消毒湿巾</li>
-          </ul>
-        </van-collapse-item>
-        <van-collapse-item title="安全注意事项">
-          <ul class="tip-list">
-            <li>· 随时注意儿童动向</li>
-            <li>· 避免单独行动</li>
-            <li>· 保存紧急联系方式</li>
-          </ul>
-        </van-collapse-item>
-      </van-collapse> -->
     </div>
   </div>
 </template>

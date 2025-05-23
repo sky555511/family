@@ -44,12 +44,12 @@ const onTabChange = (path: string) => {
           activeIcon: 'location',
           text: '旅游地图'
         },
-        {
-          path: '/tools',
-          icon: 'apps-o',
-          activeIcon: 'apps-o',
-          text: '小工具'
-        }
+        // {
+        //   path: '/tools',
+        //   icon: 'apps-o',
+        //   activeIcon: 'apps-o',
+        //   text: '小工具'
+        // }
       ]"
       :key="index"
       :name="item.path"

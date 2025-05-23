@@ -10,33 +10,33 @@ const { width: windowWidth } = useWindowSize()
 const swiperList = ref([
   {
     id: 1,
-    image: 'http://www.wp520.online/images/zsl.jpg',
-    title: '明孝陵神道漫步，梧桐大道秋色醉人',
-    subtitle: '中山陵'
+    image: 'http://www.wp520.online/images/cs/1.jpg',
+    // title: '明孝陵神道漫步，梧桐大道秋色醉人',
+    subtitle: '长沙'
   },
   {
     id: 2,
-    image: 'http://www.wp520.online/images/qhh.jpg',
-    title: '文化探索之旅',
-    subtitle: '秦淮河'
+    image: 'http://www.wp520.online/images/nj/1.jpg',
+    // title: '文化探索之旅',
+    subtitle: '南京'
   },
   {
     id: 3,
-    image: 'http://www.wp520.online/images/slj.jpg',
-    title: '华中最大滑雪场，体验林海雪原激情滑道',
+    image: 'http://www.wp520.online/images/slj/1.jpg',
+    // title: '华中最大滑雪场，体验林海雪原激情滑道',
     subtitle: '神龙架'
   },
   {
     id: 4,
-    image: 'http://www.wp520.online/images/cs.jpg',
-    title: '橘子洲头瞻仰伟人雕像，岳麓山赏红叶',
+    image: 'http://www.wp520.online/images/cs/2.jpg',
+    // title: '橘子洲头瞻仰伟人雕像，岳麓山赏红叶',
     subtitle: '长沙'
   },
   {
     id: 5,
-    image: 'http://www.wp520.online/images/xy.jpg',
-    title: '唐城穿越盛世唐风',
-    subtitle: '襄阳'
+    image: 'http://www.wp520.online/images/yy/1.jpg',
+    // title: '唐城穿越盛世唐风',
+    subtitle: '岳阳'
   }
 ])
 
@@ -60,11 +60,11 @@ const destinations = ref([
 const showPreview = (index: number) => {
   showImagePreview({
     images: [
-      'http://www.wp520.online/images/zsl.jpg',
-      'http://www.wp520.online/images/qhh.jpg',
-      'http://www.wp520.online/images/slj.jpg',
-      'http://www.wp520.online/images/cs.jpg',
-      'http://www.wp520.online/images/xy.jpg'
+      'http://www.wp520.online/images/cs/1.jpg',
+      'http://www.wp520.online/images/nj/1.jpg',
+      'http://www.wp520.online/images/slj/1.jpg',
+      'http://www.wp520.online/images/cs/2.jpg',
+      'http://www.wp520.online/images/yy/1.jpg'
     ],
     closeable: true,
     startPosition: index
